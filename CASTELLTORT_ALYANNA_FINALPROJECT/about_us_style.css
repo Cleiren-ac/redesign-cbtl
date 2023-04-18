@@ -1,0 +1,549 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+  
+    background-image: url("bg2.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+      width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: #888;
+  }
+  
+.bg { 
+      background-image: url("https://www.coffeebean.com.ph/wp-content/uploads/2021/02/Bistro-Banner.jpg");
+      height: 50%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: brightness(80%);
+  }
+.cbtl_logo1{
+      width: 64px;
+  }
+  /* title */
+.name > .name_box h1{
+    display: flex;
+    color: #fff;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.name_box{
+    background-color: #532d6d;
+    padding: 10px;
+    opacity: 0.9;
+    transform: translate(-0%, 250%);
+}
+  
+  
+  /* navbar */
+  .content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 100px;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky{
+    background: #532d6d;
+    padding: 10px 0;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+  }
+  .navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .menu-list{
+    display: inline-flex;
+  }
+  .menu-list li{
+    list-style: none;
+  }
+  .menu-list li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .menu-list li a:hover{
+    color: #c2d6d5;
+  }
+  .icon{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .menu-list .cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+  
+  
+  
+  /* body */
+  
+  .Body1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Body1_1"
+      "Body1_2";
+    grid-area: Body1;
+    margin: 20px;
+  }
+  .Body1_1 { 
+    grid-area: Body1_1;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+  .Body1_2 { 
+    grid-area: Body1_2;
+    display: inline-block;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .body1_img{
+    width: 90%;
+  }
+  .body_btn{
+    background-color: #c2d6d5;
+    border: none;
+    color: #532d6d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  .body_btn:hover{
+    background-color: #532d6d;
+    color: #fff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+
+  .Body2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Body2_1"
+      "Body2_2";
+    grid-area: Body2;
+    background-color: antiquewhite;
+  }
+  .Body2_1 { 
+    grid-area: Body2_1; 
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+  .Body2_2 { 
+    grid-area: Body2_2;
+    display: inline-block;
+    margin: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .body2_img{
+    width: 90%;
+  }
+  .Body3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Body3_1" 
+      "Body3_2";
+    grid-area: Body3;
+    margin: 20px;
+  }
+  .Body3_1 { 
+    grid-area: Body3_1;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+  .Body3_2 { 
+    grid-area: Body3_2;
+    display: inline-block;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .body3_img{
+    width: 80%;
+  }
+
+  .body_btn{
+    background-color: #c2d6d5;
+    border: none;
+    color: #532d6d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  .body_btn:hover{
+    background-color: #532d6d;
+    color: #fff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  
+  
+  /* footer */
+  footer{
+      background-color: #c2d6d5;
+      padding: 2rem 3.5rem;
+  }
+  .footer-container{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .footer-wrapper{
+      display: flex;
+    width: 100%;
+    flex:1;
+    flex-direction: column;
+      justify-content: flex-start;
+      padding: 0.8rem;
+  }
+  .footer-wrapper > h4{
+      color: #2c2530;
+      line-height: 4;
+  }
+  .footer-wrapper > a{
+      text-decoration: none;
+      color: #2c2530;
+      line-height: 2;
+  }
+  .footer-wrapper > a:hover{
+      color: #6c11a0;
+  }
+  .logo_footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .socmed{
+      text-align: center;
+      padding: 10px;
+  }
+  .socmed > a{
+      text-decoration: none;
+      color: #532d6d;
+      font-size: 20px;
+      width: 35px;
+      margin: auto;
+  }
+  .socmed > a:hover{
+      color: #fff;
+  }
+  .divider{
+    border: 1px solid #532d6d;
+    margin: 0.5rem;
+  }
+  .credits{
+    font-weight: 200;
+    font-size: 12px;
+    text-align: justify;
+  }
+  
+  
+  /* responsive */
+  @media (max-width: 1230px) {
+    .content{
+      padding: 0 60px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .content{
+      padding: 0 40px;
+    }
+  }
+  @media (max-width: 900px) {
+    .content{
+      padding: 0 30px;
+    }
+  }
+  @media (max-width: 868px) {
+    body.disabled{
+      overflow: hidden;
+    }
+    .icon{
+      display: block;
+    }
+    .icon.hide{
+      display: none;
+    }
+    .navbar .menu-list{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 300px;
+      left: -100%;
+      top: 0px;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      background: #c2d6d5;
+      transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list{
+      left: 0%;
+    }
+    .navbar .menu-list li{
+      margin-top: 45px;
+    }
+    .navbar .menu-list li a{
+      font-size: 23px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+     .navbar .menu-list li a:hover{
+      color: #532d6d;
+    }
+    .navbar.show .menu-list li a{
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: 380px) {
+    .navbar .logo a{
+      font-size: 27px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .content{
+      padding: 0 60px;
+    }
+    .name{
+      height: 65%;
+      padding-top: 210px;
+    }
+    .Body1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "Body1_1 Body1_2";
+      grid-area: Body1;
+      margin-top: 100px;
+    }
+    .Body1_1 { 
+      grid-area: Body1_1;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Body1_2 { 
+      grid-area: Body1_2;
+      display: block;
+        align-items: center;
+        justify-content: center;
+      text-align: center;
+      margin: auto;
+      padding: 50px;
+    }
+    .body1_img{
+      width: 70%;
+    }
+    .Body2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "Body1_1 Body1_2";
+      grid-area: Body2;
+      margin-top: 100px;
+    }
+    .Body2_1 { 
+      grid-area: Body1_1;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Body2_2 { 
+      grid-area: Body1_2;
+      display: block;
+        align-items: center;
+        justify-content: center;
+      text-align: center;
+      margin: auto;
+      padding: 50px;
+    }
+    .body2_img{
+      width: 70%;
+    }
+    .Body3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "Body1_1 Body1_2";
+        grid-area: Body3;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      .Body3_1 { 
+        grid-area: Body1_1;
+        display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .Body3_2 { 
+        grid-area: Body1_2;
+        display: block;
+          align-items: center;
+          justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding: 50px;
+      }
+      .body3_img{
+        width: 70%;
+      }
+      .name_box{
+        transform: translate(-0%, 10%);
+      }
+  }
+  
+  @media (min-width: 700px) {
+    .content{
+      padding: 0 60px;
+    }
+    .name{
+      height: 65%;
+      padding-top: 210px;
+    }
+    .Body1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "Body1_1 Body1_2";
+      grid-area: Body1;
+      margin-top: 100px;
+    }
+    .Body1_1 { 
+      grid-area: Body1_1;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Body1_2 { 
+      grid-area: Body1_2;
+      display: block;
+        align-items: center;
+        justify-content: center;
+      text-align: center;
+      margin: auto;
+      padding: 50px;
+    }
+    .body1_img{
+      width: 70%;
+    }
+    .Body2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "Body1_1 Body1_2";
+      grid-area: Body2;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .Body2_1 { 
+      grid-area: Body1_1;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Body2_2 { 
+      grid-area: Body1_2;
+      display: block;
+        align-items: center;
+        justify-content: center;
+      text-align: center;
+      margin: auto;
+      padding: 50px;
+    }
+    .body2_img{
+      width: 70%;
+    }
+    .Body3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "Body1_1 Body1_2";
+        grid-area: Body3;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+      .Body3_1 { 
+        grid-area: Body1_1;
+        display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .Body3_2 { 
+        grid-area: Body1_2;
+        display: block;
+          align-items: center;
+          justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding: 50px;
+      }
+      .body3_img{
+        width: 70%;
+      }
+  }
+  
+  

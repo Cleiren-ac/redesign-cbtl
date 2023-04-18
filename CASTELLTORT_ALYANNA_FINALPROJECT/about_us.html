@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>About Us - The Coffee Bean & Tea Leaf</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="cbtl_logo1.png">
+	<link rel="stylesheet" href="about_us_style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+
+<body>
+	<!-- edit in mobile view -->
+
+	<nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="index.html">
+		<img class="cbtl_logo1" src="cbtl_logo1.png" alt="CBTL Logo">
+		</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about_us.html">About us</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+	
+	<div class="bg">
+		<div class="name">
+            <div class="name_box">
+			<h1>OUR STORY</h1>
+            </div>
+		</div>
+	</div>
+
+	<div class="grid-container">
+		<div class="Body1">
+		  <div class="Body1_1">
+			<img class="body1_img" src="tim-mossholder-YC6RVdoTtIk-unsplash.jpg" alt="Heritage">
+		  </div>
+		  <div class="Body1_2">
+			<h1>OUR HERITAGE</h1>
+			<p>Born and brewed in Southern California since 1963, The Coffee Bean & Tea Leaf® has always been passionate about connecting loyal customers with carefully handcrafted products.</p>
+		  </div>
+		</div>
+		<div class="Body2">
+		  <div class="Body2_1">
+			<img class="body2_img" src="https://www.coffeebean.com.ph/wp-content/uploads/2018/07/DSF5988.jpg" alt="Caring Cup">
+		  </div>
+		  <div class="Body2_2">
+			<h1>CARING CUP</h1>
+			  <p>At The Coffee Bean & Tea Leaf®, we believe it is not enough to do well—we must do good. Our social responsibility efforts all over the world, through our Caring Cup program, blend commitment and community. We respond to the needs of local communities served by our stores and the needs of communities where our products are grown.</p>
+		  </div>
+		</div>
+        <div class="Body3">
+            <div class="Body3_1">
+              <img class="body3_img" src="https://www.coffeebean.com.ph/wp-content/uploads/2018/07/Careers-Header-8x4-1.jpg">
+            </div>
+            <div class="Body3_2">
+              <h1>BE ONE OF US</h1>
+              <p>Our passion for being Simply The Best™ in everything we do goes way deeper than the bottom of the cup. It’s really rooted in people.</p>
+              <button class="body_btn" onclick="document.location='#'">Apply Now</button>
+            </div>
+          </div>
+	</div>
+	
+	<footer>
+		<div class="logo_footer"><img src="https://www.coffeebean.com.ph/wp-content/uploads/2018/05/TCBTL_Logo-300x14.png" alt="Logo Name"></div>
+	
+		<div class="socmed">
+			<a href="https://www.facebook.com/coffeebeanphilippines" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/cbtlph" class="fa fa-twitter"></a>
+			<a href="https://www.youtube.com/channel/UCcvpTBT7eovopPeQ1t4bLnw" class="fa fa-youtube"></a>
+			<a href="https://www.instagram.com/cbtlph/" class="fa fa-instagram"></a>
+		</div>
+		
+		<div class="footer-container">
+			<div class="footer-wrapper">
+				<h4>Our Story</h4>
+				<a href="#">Our Heritage</a>
+				<a href="#">Careers</a>
+				<a href="#">Caring Cup</a>
+				<a href="#">Events</a>
+				<a href="#">Stories</a>
+				<a href="#">Swirl Rewards</a>
+			</div>
+			
+			<div class="footer-wrapper">
+				<h4>Menu</h4>
+				<a href="#">Coffee</a>
+				<a href="#">Tea</a>
+				<a href="#">Ice Blended</a>
+				<a href="#">Gourmet Offerings</a>
+				<a href="#">Downloadable Menu</a>
+			</div>
+			
+			<div class="footer-wrapper">
+				<h4>Customer Care</h4>
+				<a href="#">Contact Us</a>
+				<a href="#">Careers</a>
+				<a href="#">Store Locator</a>
+				<a href="#">FAQs</a>
+			</div>
+
+			<div class="credits">
+				<hr class="divider">
+				© 2019 International Coffee & Tea, LLC “The Coffee Bean & Tea Leaf” and logo are registered trademark of International Coffee & Tea, LLC.
+				This is for educational project purposes only. All resources came from The Coffee Bean & Tea Leaf PH website, Facebook, and Instagram Account.
+			</div>
+			
+		</div>
+	</footer>
+	
+	<script src="https://kit.fontawesome.com/f302d1a701.js" crossorigin="anonymous"></script>
+	<script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+	
+</body>
+
+</html>

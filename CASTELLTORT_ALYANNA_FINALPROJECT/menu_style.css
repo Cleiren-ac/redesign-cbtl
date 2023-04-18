@@ -1,0 +1,471 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+
+    background-image: url("bg2.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+      width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: #888;
+  }
+  
+.bg { 
+      background-image: url("https://images.summitmedia-digital.com/yummyph/images/2020/04/24/coffee-bean-tea-leaf-delivery-takeout-drive-thru.jpg");
+      height: 50%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: brightness(80%);
+  }
+.cbtl_logo1{
+      width: 64px;
+  }
+  /* title */
+.name > .name_box h1{
+    display: flex;
+    color: #fff;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.name_box{
+    background-color: #532d6d;
+    padding: 10px;
+    opacity: 0.9;
+    transform: translate(-0%, 250%);
+}
+  
+  
+  /* navbar */
+  .content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 100px;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky{
+    background: #532d6d;
+    padding: 10px 0;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+  }
+  .navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .menu-list{
+    display: inline-flex;
+  }
+  .menu-list li{
+    list-style: none;
+  }
+  .menu-list li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .menu-list li a:hover{
+    color: #c2d6d5;
+  }
+  .icon{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .menu-list .cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+  
+  
+  
+  /* body */
+  
+  .Body1 {
+    display: inline-block;
+    grid-area: Body1;
+    margin: 20px;
+    margin-top: 50px;
+  }
+  .Body2 {
+    display: inline-block;
+    grid-area: Body2;
+    background-color: antiquewhite;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .body_btn{
+    background-color: #c2d6d5;
+    border: none;
+    color: #532d6d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  .body_btn:hover{
+    background-color: #532d6d;
+    color: #fff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  
+  
+  /* footer */
+  footer{
+      background-color: #c2d6d5;
+      padding: 2rem 3.5rem;
+  }
+  .footer-container{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .footer-wrapper{
+      display: flex;
+    width: 100%;
+    flex:1;
+    flex-direction: column;
+      justify-content: flex-start;
+      padding: 0.8rem;
+  }
+  .footer-wrapper > h4{
+      color: #2c2530;
+      line-height: 4;
+  }
+  .footer-wrapper > a{
+      text-decoration: none;
+      color: #2c2530;
+      line-height: 2;
+  }
+  .footer-wrapper > a:hover{
+      color: #6c11a0;
+  }
+  .logo_footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .socmed{
+      text-align: center;
+      padding: 10px;
+  }
+  .socmed > a{
+      text-decoration: none;
+      color: #532d6d;
+      font-size: 20px;
+      width: 35px;
+      margin: auto;
+  }
+  .socmed > a:hover{
+      color: #fff;
+  }
+  .divider{
+    border: 1px solid #532d6d;
+    margin: 0.5rem;
+  }
+  .credits{
+    font-weight: 200;
+    font-size: 12px;
+    text-align: justify;
+  }
+  
+  
+  /* responsive */
+  @media (max-width: 1230px) {
+    .content{
+      padding: 0 60px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .content{
+      padding: 0 40px;
+    }
+  }
+  @media (max-width: 900px) {
+    .content{
+      padding: 0 30px;
+    }
+  }
+  @media (max-width: 868px) {
+    body.disabled{
+      overflow: hidden;
+    }
+    .icon{
+      display: block;
+    }
+    .icon.hide{
+      display: none;
+    }
+    .navbar .menu-list{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 300px;
+      left: -100%;
+      top: 0px;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      background: #c2d6d5;
+      transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list{
+      left: 0%;
+    }
+    .navbar .menu-list li{
+      margin-top: 45px;
+    }
+    .navbar .menu-list li a{
+      font-size: 23px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+     .navbar .menu-list li a:hover{
+      color: #532d6d;
+    }
+    .navbar.show .menu-list li a{
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: 380px) {
+    .navbar .logo a{
+      font-size: 27px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .content{
+      padding: 0 60px;
+    }
+    .name{
+      height: 65%;
+      padding-top: 210px;
+    }
+    .Body1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "Body1_1 Body1_2";
+      grid-area: Body1;
+      margin-top: 100px;
+    }
+    .Body2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "Body1_1 Body1_2";
+      grid-area: Body1;
+      margin-top: 100px;
+    }
+      .name_box{
+        transform: translate(-0%, 10%);
+      }
+  }
+  
+  @media (min-width: 700px) {
+    .content{
+      padding: 0 60px;
+    }
+    .name{
+      height: 65%;
+      padding-top: 210px;
+    }
+    .Body1 {
+      display: inline;
+      grid-area: Body1;
+      margin-top: 100px;
+      align-items: center;
+      justify-content:center;
+      margin-top: 50px;
+    }
+    .Body2 {
+      display: flex;
+      grid-area: Body2;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  }
+  
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+  }
+  
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .btn {
+    color: #532d6d;
+    padding: 13px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #c2d6d5;
+  }
+  
+  .btn:hover {
+    background-color: #532d6d;
+    color: #ffffff;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards_item {
+    display: flex;
+    padding: 16px;
+  }
+  
+  @media (min-width: 450px) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .cards_item {
+      width: 33.33%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .cards_item {
+      width: 33.33%;
+    }
+  }
+  
+  .card {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card_content {
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .card_title {
+    color: #2c2530;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+  
+  .card_text {
+    color: #532d6d;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;    
+    font-weight: 400;
+  }
